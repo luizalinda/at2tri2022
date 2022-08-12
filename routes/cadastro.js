@@ -1,5 +1,4 @@
 const { produto, conexao } = require("../config/database")
-const { app } = require("../config/servidor")
 
 module.exports = (app)=>{
     app.get("/cadastro", (req,res)=>{
@@ -15,5 +14,6 @@ module.exports = (app)=>{
         res.redirect('/cadastro')
     })
   
+
 }
 
